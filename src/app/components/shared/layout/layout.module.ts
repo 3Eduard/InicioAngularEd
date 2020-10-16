@@ -6,6 +6,10 @@ import {FooterComponent} from './footer/footer.component';
 import {RouterModule} from '@angular/router';
 import en from '@angular/common/locales/en';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { NavComponent } from './nav/nav.component';
+
+
 
 registerLocaleData(en);
 
@@ -16,14 +20,17 @@ registerLocaleData(en);
     FormsModule,
     RouterModule,
     NgZorroAntdModule,
+    NzCarouselModule
   ],
   declarations: [
     FooterComponent,
     HeaderComponent,
+    NavComponent,
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavComponent
   ],
 
   providers: [],

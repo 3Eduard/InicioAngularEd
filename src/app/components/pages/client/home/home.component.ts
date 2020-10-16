@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-
+  array = [1, 2, 3, 4];
   constructor() { }
+
 
   ngOnInit(): void {
   }
 
 }
+

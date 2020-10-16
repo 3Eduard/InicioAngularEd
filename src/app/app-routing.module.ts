@@ -5,12 +5,12 @@ import {NotFoundComponent} from './components/shared/not-found/not-found.compone
 
 const routes: Routes = [
   {
-    path: 'app',
+    path: '',
     component: AppComponent,
     children: [
       {
         path: '',
-        loadChildren: () => import('./components/pages/home/home.module').then(n => n.HomePageModule),
+        loadChildren: () => import('./components/pages/client/client.module').then(n => n.ClientPageModule),
       },
     ]
   },

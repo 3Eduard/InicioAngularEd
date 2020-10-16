@@ -11,7 +11,10 @@ import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { NotFoundComponent } from './components/shared/not-found/not-found.component';
-import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {NgZorroAntdModule, NzCarouselModule} from 'ng-zorro-antd';
+
+
+
 
 
 registerLocaleData(en);
@@ -20,6 +23,7 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     NotFoundComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -28,6 +32,7 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NgZorroAntdModule,
+    NzCarouselModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

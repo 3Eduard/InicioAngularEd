@@ -1,0 +1,71 @@
+
+<nz-layout>
+
+  <app-header></app-header>
+  <app-nav> </app-nav>
+  <nz-content>
+    <nz-layout>
+      <nz-sider nzWidth="200px" nzTheme="light">
+        <ul nz-menu nzMode="inline" class="sider-menu">
+          <li nz-submenu nzOpen nzIcon="user" nzTitle="subnav 1">
+            <ul>
+              <li nz-menu-item nzSelected>Comida</li>
+              <li nz-menu-item>Multipollo</li>
+              <li nz-menu-item>La Provincia</li>
+              <li nz-menu-item>Leña Y Carbon</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="Compras" nzIcon="laptop">
+            <ul>
+              <li nz-menu-item>option5</li>
+              <li nz-menu-item>option6</li>
+              <li nz-menu-item>option7</li>
+              <li nz-menu-item>option8</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="Ubicacion" nzIcon="notification">
+            <ul>
+              <li nz-menu-item>Posicion</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="Pagos De servicios y Recargas" nzIcon="notification">
+            <ul>
+              <li nz-menu-item>Servicios Publicos</li>
+              <li nz-menu-item>Internet</li>
+              <li nz-menu-item>Recarga Tu Movil</li>
+              <li nz-menu-item>Recargas Bancarias</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="Super" nzIcon="notification">
+            <ul>
+              <li nz-menu-item>Exito</li>
+              <li nz-menu-item>Super Tienda</li>
+              <li nz-menu-item>D1</li>
+              <li nz-menu-item>Justo y Bueno</li>
+            </ul>
+          </li>
+        </ul>
+      </nz-sider>
+      <nz-layout class="inner-layout">
+        <nz-breadcrumb>
+          <nz-breadcrumb-item><a [routerLink]="['']" routerLinkActive="active-link">Inicio</a></nz-breadcrumb-item>
+          <nz-breadcrumb-item><a [routerLink]="['/nosotros']" routerLinkActive="active-link">Nosotros</a></nz-breadcrumb-item>
+          <nz-breadcrumb-item><a [routerLink]="['/pedidos']" routerLinkActive="active-link">Pedidos</a></nz-breadcrumb-item>
+          <nz-breadcrumb-item><a [routerLink]="['/contact']" routerLinkActive="active-link">Contactanos</a></nz-breadcrumb-item>
+        </nz-breadcrumb>
+        <nz-content>
+          <div class="inner-content">
+            <router-outlet></router-outlet>
+          </div>
+        </nz-content>
+      </nz-layout>
+    </nz-layout>
+
+
+
+
+
+  </nz-content>
+  <app-footer></app-footer>
+</nz-layout>
+

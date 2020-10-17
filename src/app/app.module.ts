@@ -14,9 +14,6 @@ import { NotFoundComponent } from './components/shared/not-found/not-found.compo
 import {NgZorroAntdModule, NzCarouselModule} from 'ng-zorro-antd';
 
 
-
-
-
 registerLocaleData(en);
 
 @NgModule({

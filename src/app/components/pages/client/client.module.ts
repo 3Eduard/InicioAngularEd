@@ -9,7 +9,6 @@ import {LayoutModule} from '../../shared/layout/layout.module';
 import {NgZorroAntdModule, NzCarouselModule} from 'ng-zorro-antd';
 
 
-
 @NgModule({
   imports: [
     CommonModule,

@@ -5,6 +5,7 @@ import {LayoutModule} from '../../../shared/layout/layout.module';
 import {NosotrosComponent} from './nosotros.component';
 import {NosotrosPageRoutingModule} from './nosotros-routing.module';
 
+
 @NgModule({
 
   imports: [

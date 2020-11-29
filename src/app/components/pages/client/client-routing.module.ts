@@ -23,11 +23,16 @@ const routes: Routes = [
       }
       ,
       {
-        path: 'pedidos',
-        loadChildren: () => import('./pedidos/pedidos.module').then(m => m.PedidosPageModule),
+        path: 'productos',
+        loadChildren: () => import('./producto/producto.module').then(m => m.ProductoPageModule),
       }
 
     ],
+  },
+  //caa debe ir la ruta del loguin
+  {
+    path: 'login',
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule),
   }
 ];
 

@@ -12,6 +12,9 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { NotFoundComponent } from './components/shared/not-found/not-found.component';
 import {NgZorroAntdModule, NzCarouselModule} from 'ng-zorro-antd';
+import { ComponentsComponent } from './components/components.component';
+import { AdminComponent } from './components/pages/admin/admin.component';
+
 
 
 registerLocaleData(en);
@@ -20,6 +23,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     NotFoundComponent,
+    ComponentsComponent,
+    AdminComponent,
 
   ],
   imports: [

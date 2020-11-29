@@ -1,0 +1,39 @@
+<dataroot>
+  <tableViews>
+    <frmMain>
+      <settings>
+        <sizeWidth>
+          "716"
+        </sizeWidth>
+        <sizeHeight>
+          "515"
+        </sizeHeight>
+        <Maximized>
+          "False"
+        </Maximized>
+        <posLeft>
+          "325"
+        </posLeft>
+        <posTop>
+          "126"
+        </posTop>
+      </settings>
+    </frmMain>
+  </tableViews>
+</dataroot>
+<lists />
+<settings>
+  <RecentFiles>
+    "C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\14.jpg
+C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\jugo1.jpg
+C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\21.jpg
+C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\20.jpg
+C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\2.jpg
+C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\16.jpg
+C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\4.jpg
+C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\cremoso.jpg
+C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\9.jpg
+C:\Users\Ed\Desktop\Angular\InicioAngularEd\src\assets\productos\safe_image.jpg
+"
+  </RecentFiles>
+</settings>

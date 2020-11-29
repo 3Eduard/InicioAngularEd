@@ -1,0 +1,17 @@
+<nz-row class="marco" [nzGutter]="16">
+  <nz-col class="marco1" *ngFor="let item of MensajeroService.mensajeros; let i = index"  nz-col [nzSpan]="5" nzXs="24" nzSm="8" nzMd="6" nzXl="4">
+    <nz-card  style="width:auto;" [nzCover]="coverTemplate" >
+      <nz-card-meta nzTitle="{{item.nombre}}" nzDescription="{{item.experiencia}}" ></nz-card-meta>
+      <nz-row>
+        <nz-col>
+          Telefono: {{item.telefono}}
+        </nz-col>
+        <nz-col>
+        </nz-col>
+      </nz-row>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img alt="example" src="{{item.imagen}}" />
+    </ng-template>
+  </nz-col>
+</nz-row>

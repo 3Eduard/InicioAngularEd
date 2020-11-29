@@ -1,0 +1,16 @@
+<nz-breadcrumb>
+  <nz-row nzJustify="space-between">
+    <nz-col>
+      <nz-breadcrumb-item><a [routerLink]="['']" routerLinkActive="active-link">Inicio</a></nz-breadcrumb-item>
+      <nz-breadcrumb-item><a [routerLink]="['/nosotros']" routerLinkActive="active-link">Nosotros</a></nz-breadcrumb-item>
+      <nz-breadcrumb-item><a [routerLink]="['/productos']" routerLinkActive="active-link">Pedidos</a></nz-breadcrumb-item>
+      <nz-breadcrumb-item><a [routerLink]="['/contact']" routerLinkActive="active-link">Contactanos</a></nz-breadcrumb-item>
+    </nz-col>
+    <nz-col>
+      <button  (click)="showModalLogin()"><span>Ingresa</span></button>
+      <button  (click)="showModalSingup()"><span>Registarte</span></button>
+    </nz-col>
+  </nz-row>
+
+
+</nz-breadcrumb>

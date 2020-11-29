@@ -1,7 +1,22 @@
 
-<nz-carousel nzAutoPlay>
-  <div nz-carousel-content *ngFor="let index of array">
-    <h3>{{ index }}</h3>
-  </div>
-</nz-carousel>
 
+
+<div nz-row class="marco1">
+
+  <div class="marco2" nz-col nzXs="24" nzSm="4" nzMd="6" >
+
+  </div>
+
+  <div class="marco3" nz-col nzXs="24" nzSm="16" nzMd="12">
+    <nz-carousel nzAutoPlay>
+      <div nz-carousel-content *ngFor="let index of array">
+        <img src="./assets/carousel/{{ index }}" alt="" style="height: 100% ; width: 100%">
+      </div>
+    </nz-carousel>
+  </div>
+  
+  <div class="marco4" nz-col nzXs="24" nzSm="4" nzMd="6">
+
+  </div>
+
+</div>

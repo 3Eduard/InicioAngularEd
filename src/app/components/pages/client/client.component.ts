@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PruebaService} from '../../../services/prueba.service';
 
 @Component({
   selector: 'app-client',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public pruebaServicios: PruebaService,
+  ) { }
 
   ngOnInit() {
+
+     this.pruebaServicios.prueba1 = "Hola Texto desde el cliente"
   }
 
 }

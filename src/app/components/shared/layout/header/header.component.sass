@@ -1,19 +1,99 @@
 nz-header
-  background: #ffffff
-  line-height: 1.5
+  height: 140px
+  padding: 0 0
+  //background-image: linear-gradient(to right,black, #ffff00)
 
 
-  .header-menu
-    line-height: 64px
+.marco
+  padding: 0 0
+  height: 100%
+  display: flex
+  background-color: black
+
+
 
   .logo
-    height: 65px
-    background-image: url("../../../../../assets/img/banner.png")
+    background-image: url("../../../../../assets/img/MOTO BLANCA.png")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: right
+    height: 70%
+    align-self: center
+    //background-color: #efc407
+
+
+  .tunombre1
+    background-image: url("../../../../../assets/img/TU DOMICILIO . AMARILLO.png")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    position: relative
+    width: 100%
+
+
+  .tunombre1:hover
+    background-image: url("../../../../../assets/img/TU DOMICILIO . BLANCO.png")
+
+
+  .pru
+    //background-color: #32ef08
+    position: relative
+    overflow: hidden
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    flex-wrap: wrap
+
+  .whatsapp
+    width: 10%
+    height: 35%
+    background-image: url("../../../../../assets/img/WHATAPP.png")
     background-size: contain
     background-repeat: no-repeat
 
-  .texto1
-   padding-top: 5px
+
+
+
+  .facebook
+    width: 10%
+    height: 35%
+    background-image: url("../../../../../assets/img/FACEBOOK.png")
+    background-size: contain
+    background-repeat: no-repeat
+    margin: 0 15px
+
+
+  .instagram
+    width: 10%
+    height: 35%
+    background-image: url("../../../../../assets/img/INSTAGRAM.png")
+    background-size: contain
+    background-repeat: no-repeat
+    margin-right: 20px
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px)
+
+
+  nz-header
+    height: 180px
+
+  .logo
+    height: 40% !important
+  .pru
+    justify-content: space-around !important
+  .whatsapp
+
+  .facebook
+
+  .instagram
+
 
 
 

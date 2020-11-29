@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {LayoutModule} from '../../../shared/layout/layout.module';
-import {PedidosComponent} from './pedidos.component';
-import {PedidosPageRoutingModule} from './pedidos-routing.module';
-import {NzAvatarModule, NzCardModule, NzGridModule, NzIconModule} from 'ng-zorro-antd';
+import {ProductoComponent} from './producto.component';
+import {ProductoPageRoutingModule} from './producto-routing.module';
+import {NgZorroAntdModule, NzAvatarModule, NzCardModule, NzGridModule, NzIconModule} from 'ng-zorro-antd';
 
 
 @NgModule({
@@ -12,16 +12,21 @@ import {NzAvatarModule, NzCardModule, NzGridModule, NzIconModule} from 'ng-zorro
   imports: [
     CommonModule,
     FormsModule,
-    PedidosPageRoutingModule,
+    ProductoPageRoutingModule,
     LayoutModule,
     NzIconModule,
     NzAvatarModule,
     NzCardModule,
     NzGridModule,
+    NgZorroAntdModule,
 
   ],
-  declarations: [PedidosComponent],
+  declarations: [ProductoComponent],
   exports: []
 
 })
-export class PedidosPageModule {}
+export class ProductoPageModule {}
+
+
+
+

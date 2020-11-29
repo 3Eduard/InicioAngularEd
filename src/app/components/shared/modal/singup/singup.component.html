@@ -1,0 +1,27 @@
+
+<form nz-form #Registrousuario="ngForm">
+
+  <nz-form-item>
+    <nz-form-label nzRequired> Usuario </nz-form-label>
+    <input nz-input placeholder="Usuario o Email" [(ngModel)]="registro.usuario "  #usuario="ngModel" name="usuario" required=""/>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label nzRequired> Contraseña </nz-form-label>
+    <input nz-input placeholder="xxxxxxxx" [(ngModel)]="registro.cont" #cont="ngModel" name="cont" required="" />
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label nzRequired> perfil </nz-form-label>
+    <input nz-input placeholder="xxxxxxxx" [(ngModel)]="registro.profile" #profile="ngModel" name="profile" required="" />
+  </nz-form-item>
+  <nz-row nzJustify="space-around">
+    <nz-col>
+      <button nz-button [nzType]="'primary'" (click)="form()" [disabled]="!Registrousuario.form.valid" [class.active]="Registrousuario.form.valid" [class.disabled]="!Registrousuario.form.valid"><span>Registrate</span></button>
+    </nz-col>
+    <nz-col>
+      <button nz-button [nzType]="'primary'" (click)="cancelar()" ><span>Cancelar</span></button>
+    </nz-col>
+  </nz-row>
+</form>
+

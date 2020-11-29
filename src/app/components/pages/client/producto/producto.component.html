@@ -1,0 +1,61 @@
+
+<nz-row class="marco" [nzGutter]="16">
+<nz-col class="marco1" *ngFor="let item of ProductoServicios.productos; let i = index" (click)="targetadatos(i)" nz-col [nzSpan]="5" nzXs="24" nzSm="8" nzMd="6" nzXl="4">
+  <nz-card  style="width:auto;" [nzCover]="coverTemplate"  >
+    <nz-card-meta nzTitle="{{item.nombre | titlecase }}" [nzAvatar]="avatarTemplate"></nz-card-meta>
+      <nz-row>
+        <nz-row>
+          {{item.precio | currency: 'USD'}}
+        </nz-row>
+      </nz-row>
+  </nz-card>
+  <ng-template #avatarTemplate>
+
+  </ng-template>
+  <ng-template #coverTemplate>
+   <img src="{{item.imagen}}" >
+  </ng-template>
+
+  <ng-template #actionSetting>
+
+  </ng-template>
+  <ng-div #actionEdit>
+
+  </ng-div>
+  <ng-template #actionEllipsis>
+
+  </ng-template>
+</nz-col>
+</nz-row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@ import {FormsModule} from '@angular/forms';
 import {HomeComponent} from './home.component';
 import {HomePageRoutingModule} from './home-routing.module';
 import {LayoutModule} from '../../../shared/layout/layout.module';
-import {NzCarouselModule} from 'ng-zorro-antd';
+import {NzCarouselModule, NzGridModule} from 'ng-zorro-antd';
 @NgModule({
 
   imports: [
@@ -13,6 +13,7 @@ import {NzCarouselModule} from 'ng-zorro-antd';
     HomePageRoutingModule,
     LayoutModule,
     NzCarouselModule,
+    NzGridModule,
   ],
   declarations: [HomeComponent],
   exports: []

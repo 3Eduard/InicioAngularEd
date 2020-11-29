@@ -1,0 +1,17 @@
+
+
+
+
+  <nz-row >
+    <nz-card [nzCover]="coverTemplate">
+      <nz-card-meta nzTitle="{{ProductoServicios.productos[pos].nombre | titlecase }}" ></nz-card-meta>
+      <nz-row>
+        {{ProductoServicios.productos[pos].descripcion | titlecase}}
+      </nz-row>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img src="{{ProductoServicios.productos[pos].imagen}}"/>
+    </ng-template>
+  </nz-row>
+
+

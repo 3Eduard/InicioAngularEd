@@ -12,6 +12,11 @@ const routes: Routes = [
         path: '',
         loadChildren: () => import('./components/pages/client/client.module').then(n => n.ClientPageModule),
       },
+
+      {
+        path: 'admin',
+        loadChildren: () => import('./components/pages/admin/admin.module').then(n => n.AdminPageModule),
+      }
     ]
   },
   {

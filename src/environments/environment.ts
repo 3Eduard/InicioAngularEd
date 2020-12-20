@@ -3,6 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  API: 'https://apisigo.ufpso.edu.co/',
+
   production: false
 };
 

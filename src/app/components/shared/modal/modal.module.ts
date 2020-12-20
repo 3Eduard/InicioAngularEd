@@ -9,6 +9,7 @@ import {LoginComponent} from './login/login.component';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import { SingupComponent } from './singup/singup.component';
 import { VentanaproductoComponent } from './ventanaproducto/ventanaproducto.component';
+import { RegistrarComponent } from './registrar/registrar.component';
 
 registerLocaleData(en);
 
@@ -16,7 +17,8 @@ registerLocaleData(en);
   declarations: [
     LoginComponent,
     SingupComponent,
-    VentanaproductoComponent
+    VentanaproductoComponent,
+    RegistrarComponent
   ],
   exports: [
     LoginComponent

@@ -1,0 +1,31 @@
+<form nz-form #Loginusuario="ngForm">
+  <nz-form-item>
+    <nz-form-label nzRequired> Nombre </nz-form-label>
+    <input nz-input placeholder="Nombre del Proyecto" [(ngModel)]="productos2.nombre_proyecto "  #nombre="ngModel" name="nombre" required=""/>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzRequired> titulo </nz-form-label>
+    <input nz-input placeholder="Titulo" [(ngModel)]="productos2.titulo" #titulo="ngModel" name="titulo" required="" />
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzRequired> Descripcion </nz-form-label>
+    <input nz-input placeholder="Descripcion" [(ngModel)]="productos2.descripcion" #descripcion="ngModel" name="descripcion" required="" />
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzRequired> Precio </nz-form-label>
+    <input nz-input placeholder="Precio" [(ngModel)]="productos2.precio" #precio="ngModel" name="precio" required="" />
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzRequired> Imagen </nz-form-label>
+    <input nz-input placeholder="Imagen" [(ngModel)]="productos2.imagen" #imagen="ngModel" name="imagen" required="" />
+  </nz-form-item>
+  <nz-row nzJustify="space-around">
+    <nz-col>
+      <button nz-button [nzType]="'primary'" (click)="form()" [disabled]="!Loginusuario.form.valid" [class.active]="Loginusuario.form.valid" [class.disabled]="!Loginusuario.form.valid"><span>Ingresar</span></button>
+    </nz-col>
+    <nz-col>
+      <button nz-button [nzType]="'primary'" (click)="cancelar()" ><span>Cancelar</span></button>
+    </nz-col>
+  </nz-row>
+</form>
+

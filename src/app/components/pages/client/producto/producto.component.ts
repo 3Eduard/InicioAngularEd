@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {ProductsService} from '../../../../services/products.service';
 import {NzModalService} from 'ng-zorro-antd';
 import {VentanaproductoComponent} from '../../../shared/modal/ventanaproducto/ventanaproducto.component';
+import {Producto} from '../../../../models/producto';
+
 
 
 @Component({
@@ -11,7 +13,17 @@ import {VentanaproductoComponent} from '../../../shared/modal/ventanaproducto/ve
 })
 export class ProductoComponent implements OnInit {
 
-  constructor(
+  pro:Producto= {
+    nombre_proyecto: null,
+    titulo: null,
+    descripcion: null,
+    precio: null,
+    imagen: null
+
+}
+
+
+constructor(
       public ProductoServicios: ProductsService,
       public modalService: NzModalService
   ) {
@@ -43,7 +55,16 @@ export class ProductoComponent implements OnInit {
       nzContent: VentanaproductoComponent,
       nzFooter: null,
     });
+
   }
+
+
+
+
+
 }
+
+
+
 
 

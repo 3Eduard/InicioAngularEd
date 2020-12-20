@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {AuthService} from './auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -35,5 +37,15 @@ export class MensajeroService {
     }
   ];
 
-  constructor() { }
+  constructor(
+    private httpClient: HttpClient,
+    private AuthService: AuthService
+  ) {
+
+  }
+
+  mensajerof()
+  {
+    return this.httpClient.get(this.AuthService.API+'',{})
+  }
 }

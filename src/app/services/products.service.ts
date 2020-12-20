@@ -1,10 +1,31 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {AuthService} from './auth.service';
+import {Producto} from '../models/producto';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
 
+
+  productos1 : any
+
+
+  pro: Producto = {
+    nombre_proyecto:null,
+    titulo:null,
+    descripcion:null,
+    //resumen:null,
+    precio:null,
+    //color:null,
+    imagen:null,
+    //marca:null,
+    //ubicacion:null,
+    //destacado:null,
+    //state:null
+
+ };
 
   productos= [
     {
@@ -81,6 +102,53 @@ export class ProductsService {
   ];
 
 
-  constructor() { }
+
+
+  constructor(
+    private httpClient: HttpClient,
+    private  authService: AuthService,
+  ) { }
+
+
+
+  traertodo()
+  {
+    return this.httpClient.get(this.authService.API+'product/all',{headers: this.authService.headers} )
+  }
+
+  crearproducto(productos2 )
+  {
+    return this.httpClient.post(this.authService.API+'add/product',productos2 ,{headers: this.authService.headers} )
+  }
+
+  actualizarproducto()
+  {
+    return this.httpClient.put(this.authService.API+'update/product',{headers: this.authService.headers} )
+  }
+  eliminarproducto()
+  {
+    return this.httpClient.put(this.authService.API+'delete/product',{'product_id': 4},{headers: this.authService.headers} )
+  }
+
+  consultarproducto()
+  {
+    return this.httpClient.post(this.authService.API+'query/product',{'product_id': 1},{headers: this.authService.headers} )
+  }
+
+  habilitarproducto()
+  {
+    return this.httpClient.put(this.authService.API+'enable/product',{headers: this.authService.headers} )
+  }
+  desabilitarproducto()
+  {
+    return this.httpClient.put(this.authService.API+'disable/product',{headers: this.authService.headers} )
+  }
+
+
+
+
+
 }
+
+
 
